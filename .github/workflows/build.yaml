@@ -58,3 +58,6 @@ jobs:
         run: |
           echo " questo e' il workspace: $GITHUB_WORKSPACE"
           ls $GITHUB_WORKSPACE
+          ls /tmp
+          ls /
+          ls /github/workspace
