@@ -53,3 +53,8 @@ jobs:
             copa-action 'docker.io/library/nginx:1.21.6' 'nginx.1.21.6.json' '1.21.6-patched' '10m' 'output.json' 'openvex'
           docker images
           bats --print-output-on-failure ./test/test.bats
+      
+      - name: Last Tests 
+        run: |
+          echo " questo e' il workspace: $GITHUB_WORKSPACE"
+          ls $GITHUB_WORKSPACE
