@@ -13,6 +13,7 @@ teardown_file() {
 }
 
 @test "Check output.json exists" {
+    pwd
     run test -f /tmp/output.json
     [ "$status" -eq 0 ]
 }
