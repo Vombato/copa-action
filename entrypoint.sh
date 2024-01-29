@@ -30,4 +30,4 @@ else
 fi
 echo "current path" && pwd
 echo "list files" && ls
-df -hf
+df -h
