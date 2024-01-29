@@ -13,8 +13,7 @@ teardown_file() {
 }
 
 @test "Check output.json exists" {
-    echo "current path" && pwd
-    echo "list files" && ls
+
     run test -f /tmp/output.json
     [ "$status" -eq 0 ]
 }
