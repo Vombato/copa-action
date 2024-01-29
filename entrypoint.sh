@@ -30,4 +30,4 @@ else
 fi
 echo "current path" && pwd
 echo "list files" && ls
-df -h
+echo "try to list github/workspace $GITHUB_WORKSPACE" && ls "$GITHUB_WORKSPACE"
