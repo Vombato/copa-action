@@ -28,3 +28,6 @@ else
     echo "Error patching image $image with copa"
     exit 1
 fi
+echo "current path" && pwd
+echo "list files" && ls
+df -hf
