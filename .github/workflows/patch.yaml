@@ -58,16 +58,14 @@ jobs:
           patched-tag: "patched"
           # buildkit-version: "v0.12.4" # optional, default is latest
           # copa-version: "0.6.0" # optional, default is latest
-          output: "openvex.json"
-          format: openvex
-
+          output: "test.json"
 
       - name: Debug Action
         run: |
           echo "Running whoami" && whoami
           echo "Running pwd" && pwd
           echo "Files in the data folder:" && ls -la
-          echo "Output file:" && cat openvex.json
+          echo "Output file:" && cat test.json
           
 
         # see https://github.com/docker/login-action#usage for other registries
