@@ -66,8 +66,8 @@ jobs:
         run: |
           echo "Running whoami" && whoami
           echo "Running pwd" && pwd
-          echo "Files in the data folder:" && ls -la data
-          echo "Output file:" && cat data/openvex.json
+          echo "Files in the data folder:" && ls -la
+          echo "Output file:" && cat openvex.json
           
 
         # see https://github.com/docker/login-action#usage for other registries
